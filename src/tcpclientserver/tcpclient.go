@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/jonfk/golang-chat/tcp/common"
+	"tcpclientserver/common"
 	"io"
 	"log"
 	"net"
