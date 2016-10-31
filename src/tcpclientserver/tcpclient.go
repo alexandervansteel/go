@@ -41,7 +41,7 @@ func writeInput(conn *net.TCPConn) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("Enter text: ")
+	fmt.Print("Enter text: ")
 	for {
 		text, err := reader.ReadString('\n')
 		if err != nil {

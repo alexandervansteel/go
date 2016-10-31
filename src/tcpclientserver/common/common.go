@@ -56,8 +56,8 @@ func ReadMsg(conn net.Conn) (string, error) {
 	// Make a buffer to hold incoming data.
 	buf := make([]byte, lenData)
 	reqLen := 0
-	// Keep reading data from the incoming connection into the buffer until all the data promised is
-	// received
+	// Keep reading data from the incoming connection into the buffer until all
+	// the data promised is received
 	for reqLen < int(lenData) {
 		tempreqLen, err := conn.Read(buf[reqLen:])
 		reqLen += tempreqLen
